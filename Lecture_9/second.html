@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+</head>
+<body>
+
+    <h2>Job Application</h2>
+
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter name"> <br><br>
+
+        <label for="mail">Email: </label>
+        <input type="text" id="mail" placeholder="Enter mail"> <br><br>
+
+        <label for="ph">Phone: </label>
+        <input type="tel" id="ph" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter phone number"> <br><br>
+
+        <label for="cv">Resume: </label>
+        <input type="file" name="fileUpload" id="cv"><br><br>
+
+        <label for="experience">Experience (years): </label>
+        <input type="number" name="experience" id="experience" min="0" max="50">
+
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" name="skill1" id="skill1">
+            <label for="skill1">HTML</label>
+            
+            <input type="checkbox" name="skill2" id="skill2">
+            <label for="skill2">CSS</label>
+
+            <input type="checkbox" name="skill3" id="skill3">
+            <label for="skill3">JavaScript</label>
+        </fieldset>
+        <br>
+
+        <label for="qualification">Highest Education: </label>
+        <select name="qualification" id="qualification">
+            <option value="hs">High School</option>
+            <option value="grad">Graduate</option>
+            <option value="pgrad">Post Graduate</option>
+            <option value="dip">Diploma</option>
+        </select><br><br>
+
+        <label for="">Availablility: </label> <br>
+        <input type="radio" id="full" name="one">
+        <label for="full"> Full-time</label><br>
+
+        <input type="radio" id="part" name="one">
+        <label for="part"> Part-time</label><br>
+
+        <br>
+
+        <label for="additional">Additional Comments</label><br>
+        <textarea name="comment" id="additional" cols="30" rows="10" placeholder="Additional informations"></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>

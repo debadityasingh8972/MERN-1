@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+
+    <h2>Event Resistration</h2> 
+    <form action="">
+
+        <label for="name">Name: </label><br>
+        <input type="text" name="name" id="name" placeholder="Enter name"><br><br>
+
+        <label for="email">Email: </label><br>
+        <input type="email" name="mail" id="email" placeholder="abcd@example.com"><br><br>
+
+        <label for="ph">Phone: </label><br>
+        <input type="tel" name="phone" id="ph" placeholder="Mobile No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+        <label for="job">Occupation: </label><br>
+        <select name="occupation" id="job">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="principal">Principal</option>
+            <option value="oth">Other</option>
+        </select> <br><br>
+
+        <fieldset>
+            <legend>Topics of Interest</legend>
+
+            <input type="checkbox" id="lang1" name="lang1">
+            <label for="lang1">HTML</label><br>
+    
+            <input type="checkbox" id="lang2" name="lang2">
+            <label for="lang2">CSS</label><br>
+    
+            <input type="checkbox" id="lang3" name="lang3">
+            <label for="lang3">JavaScript</label><br><br>
+
+        </fieldset>
+
+        <label for="feedback">Comments: </label><br>
+        <textarea name="comment" id="feedback" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+        
+        <input type="submit" name="" value="Register">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stores Metadata | SEO data | title | stylesheet </title>
+</head>
+<body>
+    <h1 style="background-color: aqua;">Web Tech - 1</h1>
+    <h2 style="color:brown;">Web Tech - 2</h2>
+    <h3>Web Tech - 3</h3>
+    <h4>Web Tech - 4</h4>
+    <h5>Web Tech - 5</h5>
+    <h6>Web Tech - 6</h6>
+
+    <p>You can reach Me at:</p>
+    <ul>
+        <li><a href="https://example.com">Website</a></li>
+        <li><a href="mailto:m.bluth@example.com">Email</a></li>
+        <li><a href="tel:+123456789">Phone</a></li>
+    </ul>
+    <p>Ordered List</p>
+    <ol>
+        <li>Garam Mashala</li>
+        <li>Lal Mirch</li>
+        <li>Ginger Garlic Paste</li>
+    </ol>
+    <table>
+        <tr>
+            <td>Sr. no</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ramesh</td>
+            <td>Kolkata</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Suresh</td>
+            <td>Hydrabad</td>
+        </tr>
+    </table>
+    <form action="">
+        Name: <input type="text" text="Enter Name"> 
+        Email: <input type="text">
+        Mobile No. <input type="number">
+    </form>
+    
+
+    <!-- <img src="https://wallpapers.com/images/high/captain-levi-ackerman-attack-on-titan-txav641q0f9nfsyl.webp" alt="Captain Levi"> -->
+
+    <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur, adipisicing elit. Maiores nulla <s>explicabo</s>  vitae facere nam magni harum architecto itaque vel in dolorum sit debitis rem placeat deserunt doloremque eius, aut iusto, quisquam error consequuntur possimus. Architecto minima, aperiam exercitationem asperiores totam facere, eius eveniet, nostrum atque reprehenderit aliquam vitae dolorum fugiat.</p>
+
+    <p>
+        function validateForm() {
+            var returnVal = true;
+    
+            //Perform validation
+            var name = document.forms['myForm']["fname"].value;
+            if (name.length < 5) {
+                seterror("name", "*Length of Name is too short");
+                returnVal = false;
+            }
+            // if (name.length == 0) {
+            //     seterror("name", "*Length of Name can't be empty");
+            //     returnVal = false;
+            // }
+            <code>
+                var email = document.forms['myForm']["femail"].value;
+            if (email.length > 30) {
+                seterror("email", "*Length of Email is too long");
+                returnVal = false;
+            }
+            </code>
+            
+    
+            var phone = document.forms['myForm']["fphone"].value;
+            if (phone.length == 0 || phone.length != 10) {
+                seterror("phone", "*Enter a valid phone Number");
+    
+    
+                returnVal = false;
+            }
+    
+    
+    
+            return returnVal;
+        }
+
+        <br>
+        <br>
+        2^5 = 2<sup>5</sup>
+        <p>
+            O2 = O<sub>2</sub>
+        </p>
+            <pre>
+                <!-- <code> -->
+                    function validateForm() {
+                        var returnVal = true;
+                
+                        //Perform validation
+                        var name = document.forms['myForm']["fname"].value;
+                        if (name.length < 5) {
+                            seterror("name", "*Length of Name is too short");
+                            returnVal = false;
+                        }
+                        // if (name.length == 0) {
+                        //     seterror("name", "*Length of Name can't be empty");
+                        //     returnVal = false;
+                        // }
+                
+                        var email = document.forms['myForm']["femail"].value;
+                        if (email.length > 30) {
+                            seterror("email", "*Length of Email is too long");
+                            returnVal = false;
+                        }
+                
+                        var phone = document.forms['myForm']["fphone"].value;
+                        if (phone.length == 0 || phone.length != 10) {
+                            seterror("phone", "*Enter a valid phone Number");
+                            returnVal = false;
+                        }
+                        return returnVal;
+                    }
+                <!-- </code> -->
+            </pre>
+    </p>
+    <p>
+    </p>
+
+</body>
+</html>
