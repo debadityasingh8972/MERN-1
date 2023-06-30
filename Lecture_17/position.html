@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .image2{
+            /* position: absolute; */
+            /* top: 375px; */
+            /*left: auto;
+            right: auto; */
+            bottom: auto; 
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            /* position: -webkit-sticky; */
+            position: sticky;
+            top: 100px;
+        }
+        .container{
+            position: relative;
+            height: 4000px;
+        }
+        .box{
+            background-color: skyblue;
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="emma1.jpg" alt="poster1" width="310px" height="350px" class="image1"/>
+        <img src="emma2.jpg" alt="poster2" width="310px" height="350px" class="image2"/>
+        <img src="madara.jpg" alt="poster3" width="310px" height="350px" class="image3"/>
+        <img src="levi.jpg" alt="poster4" width="310px" height="350px" class="image4"/>
+    </div>
+    <div class="box">
+
+    </div>
+</body>
+</html>
