@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            width: 350px;
+            height: 80px;
+            background-color: aquamarine;
+            border-radius: 10px;
+            position: relative;
+            margin: 5px;
+            border: 2px solid blueviolet;
+            /* animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-direction: alternate; */
+            
+            /* animation-fill-mode: both; */
+            animation: rightmovement 5s cubic-bezier(0.86, 0, 0.07, 1) 1s 1 alternate;
+        }
+        @keyframes rightmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1470px;
+            }
+        }
+        .box2{
+            width: 350px;
+            height: 80px;
+            background-color: orange;
+            border-radius: 10px;
+            position: relative;
+            margin: 5px;
+            border: 2px solid rgb(125, 6, 236);
+            animation: leftmovement 5s cubic-bezier(0.86, 0, 0.07, 1) 1s 1 alternate;
+        }
+        @keyframes leftmovement {
+            from {
+                top: 600px;
+                left: 1350px;
+            }
+
+            to {
+                top: 600px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="box2">
+
+        </div>
+
+        <div id="circle">
+
+        </div>
+    </div>
+</body>
+</html>
