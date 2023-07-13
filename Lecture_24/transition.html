@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: rgba(253, 253, 40, 0.644);
+            border: 2px solid black;
+
+            transition-property: all;
+            transition-duration: 4s;
+            /* transition-delay: 1s; */
+            transition-timing-function: linear; 
+            /* property name | duration | easing function | delay */
+            transition: all 4s linear 1s;         
+        }
+        p {
+            display: flex;
+            margin: 5px;
+            padding: 5px;
+            font-size: 30px;
+            justify-content: center;
+        }
+        .box:hover{
+            width: 800px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Box</p>
+    </div>
+</body>
+</html>
